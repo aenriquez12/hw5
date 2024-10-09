@@ -1,0 +1,111 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\pokedex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pokedex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\pokedex.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pokedex.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\Pokemon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pokemon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\pokemon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pokemon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "pokemon.h",
+              "DocumentMoniker": "C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\pokemon.h",
+              "RelativeDocumentMoniker": "pokemon.h",
+              "ToolTip": "C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\pokemon.h",
+              "RelativeToolTip": "pokemon.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-08T06:19:46.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pokemon.cpp",
+              "DocumentMoniker": "C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\Pokemon.cpp",
+              "RelativeDocumentMoniker": "Pokemon.cpp",
+              "ToolTip": "C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\Pokemon.cpp",
+              "RelativeToolTip": "Pokemon.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-08T06:19:46.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "pokedex.txt",
+              "DocumentMoniker": "C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\pokedex.txt",
+              "RelativeDocumentMoniker": "pokedex.txt",
+              "ToolTip": "C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\pokedex.txt",
+              "RelativeToolTip": "pokedex.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-08T06:19:46.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-08T06:19:43.571Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "pokedex.h",
+              "DocumentMoniker": "C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\pokedex.h",
+              "RelativeDocumentMoniker": "pokedex.h",
+              "ToolTip": "C:\\Users\\tenri\\OneDrive\\Desktop\\School\\Fall 2024\\Week 7\\Assigments\\pokedex.h",
+              "RelativeToolTip": "pokedex.h",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-08T06:19:46.363Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
