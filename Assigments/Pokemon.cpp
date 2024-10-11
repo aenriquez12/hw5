@@ -1,4 +1,7 @@
 #include "pokemon.h"
+#include <sstream>
+#include <iomanip>
+
 
 // Constructor for single-type Pokemon
 Pokemon::Pokemon(string name, int ndex, Type type1){
@@ -80,3 +83,56 @@ float Pokemon::damage_multiplier(Type attack_type){
     return multiplier; 
 }
 
+Pokemon::Pokemon(string summary) {
+    // Expected format: "Name, #005, type1," or "Name, #012, type1, type2,"
+    
+    // Find the first comma to extract the name
+    size_t pos1 = summary.find(',');
+    _name = summary.substr(0, pos1);
+
+    // Find the second comma to extract the Ndex
+    size_t pos2 = summary.find(',', pos1 + 1);
+    string ndex_str = summary.substr(pos1 + 3, pos2 - pos1 - 3);  // Skips " #"
+    _ndex = std::stoi(ndex_str);  // Convert to int
+
+    // Find the third comma to extract the first type
+    size_t pos3 = summary.find(',', pos2 + 1);
+    string type1_str = summary.substr(pos2 + 2, pos3 - pos2 - 2);  // Extract type1 string
+    types[0] = string_to_type(type1_str);
+    type_count = 1;
+
+    // If there is another type, extract it
+    if (pos3 + 1 < summary.length()) {
+        string type2_str = summary.substr(pos3 + 2, summary.length() - pos3 - 3);  // Remove the trailing comma
+        types[1] = string_to_type(type2_str);
+        type_count = 2;
+    }
+}
+
+string Pokemon::summary() {
+    string result = _name + ", #" + ( _ndex < 10 ? "00" : (_ndex < 100 ? "0" : "")) + std::to_string(_ndex) + ", " + type_to_string(types[0]) + ",";
+    if (type_count == 2) {
+        result += " " + type_to_string(types[1]) + ",";
+    }
+    return result;
+}
+
+
+string type_to_string(Pokemon::Type type) {
+    switch(type) {
+        case Pokemon::Normal: return "Normal";
+        case Pokemon::Fighting: return "Fighting";
+        case Pokemon::Flying: return "Flying";
+        case Pokemon::Poison: return "Poison";
+        default: return "Unknown";
+    }
+}
+
+
+Pokemon::Type string_to_type(string s) {
+    if (s == "Normal") return Pokemon::Normal;
+    if (s == "Fighting") return Pokemon::Fighting;
+    if (s == "Flying") return Pokemon::Flying;
+    if (s == "Poison") return Pokemon::Poison;
+    return Pokemon::Normal; 
+}
