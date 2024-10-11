@@ -85,7 +85,7 @@ float Pokemon::damage_multiplier(Type attack_type){
 }
 
 
-/
+
 Pokemon::Pokemon(string summary) {
     // Expected format: "Name, #005, type1," or "Name, #012, type1, type2,"
     
