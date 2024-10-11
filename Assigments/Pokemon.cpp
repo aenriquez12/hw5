@@ -1,49 +1,50 @@
-#include "pokemon.h"
-#include <sstream>
-#include <iomanip>
+#include "pokemon.h"  
+#include <sstream>   
+#include <iomanip>    
 
-
-// Constructor for single-type Pokemon
-Pokemon::Pokemon(string name, int ndex, Type type1){
-    _ndex = ndex;
-    _name = name;
-    type_count = 1;
-    types[0] = type1;
+// Constructor for one type
+Pokemon::Pokemon(string name, int ndex, Type type1) {
+    _ndex = ndex;          // Set the ndex
+    _name = name;          // Set the name
+    type_count = 1;        // This Pokemon only has one type
+    types[0] = type1;      // Store the first type
 }
 
-// Constructor for multi-type Pokemon
-Pokemon::Pokemon(string name, int ndex, Type type1, Type type2){
-    _ndex = ndex;
-    _name = name;
-    type_count = 2;
-    types[0] = type1;
-    types[1] = type2;
+// Constructor for a two types
+Pokemon::Pokemon(string name, int ndex, Type type1, Type type2) {
+    _ndex = ndex;          // Set the ndex
+    _name = name;          // Set the Pokemons name
+    type_count = 2;        // This Pokemon has two types
+    types[0] = type1;      // Store the first type
+    types[1] = type2;      // Store the second type 
 }
 
-// Returns the name of the Pokemon
+
 string Pokemon::name() {
-    return _name;
+    return _name;          // Return name 
 }
 
-// Returns the Ndex (national index) of the Pokemon
+
 int Pokemon::Ndex() {
-    return _ndex;
+    return _ndex;          // Return ndex
 }
 
-// Returns the first type of the Pokemon
+
 Pokemon::Type Pokemon::type1() {
-    return types[0];
+    return types[0];       // Return the first type
 }
+
 
 bool Pokemon::is_multitype() {
-    return type_count == 2;
+    return type_count == 2;  // True if it has two types, false otherwise
 }
 
+
 Pokemon::Type Pokemon::type2() {
-    if (type_count == 2) {
-        return types[1];
+    if (type_count == 2) {   // If there's a second type,
+        return types[1];     // return it.
     } else {
-        return types[0];
+        return types[0];     // else just return the first type again
     }
 }
 
@@ -83,6 +84,8 @@ float Pokemon::damage_multiplier(Type attack_type){
     return multiplier; 
 }
 
+
+/
 Pokemon::Pokemon(string summary) {
     // Expected format: "Name, #005, type1," or "Name, #012, type1, type2,"
     
@@ -109,30 +112,32 @@ Pokemon::Pokemon(string summary) {
     }
 }
 
-string Pokemon::summary() {
-    string result = _name + ", #" + ( _ndex < 10 ? "00" : (_ndex < 100 ? "0" : "")) + std::to_string(_ndex) + ", " + type_to_string(types[0]) + ",";
-    if (type_count == 2) {
+
+string Pokemon::summary() {                            // Get a string summary of the Pokémon
+// Build the summary string from the Pokemons name, ndex, and types
+    string result = _name + ", #" + (_ndex < 10 ? "00" : (_ndex < 100 ? "0" : "")) + std::to_string(_ndex) + ", " + type_to_string(types[0]) + ",";
+    if (type_count == 2) {                             // If it has two types then include the second one
         result += " " + type_to_string(types[1]) + ",";
     }
-    return result;
+    return result;                                     // Return the full summary string
 }
 
 
-string type_to_string(Pokemon::Type type) {
+string type_to_string(Pokemon::Type type) {           // Converts a Type enum to a string (so you can print it or save it)
     switch(type) {
         case Pokemon::Normal: return "Normal";
         case Pokemon::Fighting: return "Fighting";
         case Pokemon::Flying: return "Flying";
         case Pokemon::Poison: return "Poison";
-        default: return "Unknown";
+        default: return "Normal";  // default case 
     }
 }
 
 
-Pokemon::Type string_to_type(string s) {
+Pokemon::Type string_to_type(string s) {              // Converts a string to a Type enum (so you can use it in the code)
     if (s == "Normal") return Pokemon::Normal;
     if (s == "Fighting") return Pokemon::Fighting;
     if (s == "Flying") return Pokemon::Flying;
     if (s == "Poison") return Pokemon::Poison;
-    return Pokemon::Normal; 
+    return Pokemon::Normal;                            // Default to Normal if string the names does not correspond
 }
